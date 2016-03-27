@@ -1,4 +1,5 @@
 var express = require('express');
+var database = require('./database.js');
 var app = express();
 var port = process.env.PORT || 1337;
 //Set up to render the html correctly from the html folder
@@ -17,6 +18,16 @@ app.get('/hi', function(req,res){
 app.get('/helloworld', function(req,res){
   console.log('app helloworld/ requested');
   return res.render("helloworld.html");
+});
+app.get('/getTrains', function(req,res){
+  console.log('app getTrains/ requested');
+   database.executeQuery("SELECT * FROM trains", function(results) {
+      res.send(results);
+         });
+  });
+app.get('/trainList', function(req,res){
+  console.log('app trainList/ requested');
+  return res.render("trainList.html");
 });
 app.listen(port, function(){
   console.log("Application is running:")
