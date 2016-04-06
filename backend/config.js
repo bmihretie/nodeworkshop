@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
 const local = {
-  DATABASE_CONNECTION_URL : "postgres://nodeuser:13149700@localhost/nodeworkshop"
+  DATABASE_CONNECTION_URL : "postgres://nodeuser:13149700@localhost/trainrequest"
 };
 
 const heroku = {

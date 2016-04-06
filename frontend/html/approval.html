@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+          crossorigin="anonymous">
+     <meta name="viewport" content="width=device-width, initial-scale=1"><script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/trainRequest.css">
+     <script src="../js/outstandingRequest.js"></script>
+    <title>Train2Go</title>
+</head>
+<body>
+    
+    
+    <div class="container-fluid">
+         <div class="header">
+        <p> <img src="http://www.ttx.com/Libraries/Main_Gallery/TTXLOGOr_4c_RSG.sflb.ashx" border-width="0" height="45">   
+           Railcar Pooling Experts&reg;</p>
+      </div>
+
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Train2Go</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a class="button"href="landingpage.html">Home</a></li>
+        <li><a class="button"href="emp2.html">Request for Training</a></li>
+        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/trainRequest">History</a></li> 
+        <li><a class="button"href="cus.html">Contact us</a></li> 
+        
+       
+         
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+<div class="container">
+  <h2>Employees Requesting Approvals for Training</h2>
+  <form method="post">
+   <textarea class="text" cols="25" rows ="1" name="newDocument"></textarea>
+   <br/>
+   <input type="submit" value="Search" class="submitButton">
+</form>  
+  <div class="row">
+    <div class="col-sm-6" style="background-color:lavander";></div>
+      <p id="history_form"></p>
+        <form class="form-group" id="historyForm">
+            <h3>Search Past Requests</h3>
+            <div class="input">Email <br> <input type="text" id="Cntct_Email_Addr"/></div>
+            <br>
+            <div class="input">From<br> <input type="date"  id="Trng_Cors_Strt_Dt"/></div>
+            <br>
+            <div class="input">To <br><input type="date"  id="Trng_Cors_End_Dt"/></>
+            <br>
+            <br>
+            <br>
+            <input type="submit" class="btn btn-default"/>
+        </budget>
+            <a href="/approval" class="btn btn-default">Get Budget</a>
+    </div>
+    <div class="row">
+  <h2>Approval </h2>
+  <form role="approvetrainform">
+    <label class="radio-inline">
+      <input type="radio" name="approved">Approved
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="pending">Pending
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="not approved">Not Approved
+    </label>
+  <br>
+  <br>
+  <br>
+  
+                <select <% id="ImmediateSupervisor"%>
+  <option value="Orline.Cacayan">Orline Cacayan</option>
+  <option value="Scott.Wissel">Scott Wissel</option>
+  <option value="Purnesh.Rustagi">Purnesh Rustagi</option>
+  <option value="Alan_Tang">Alan Tang</option>
+  <option value="Kathy_Miller">Kathy Miller</option>Audi</option>
+  <option value="Kendall.Zettlmeier">Kendall Zettlmeier</option>
+  <option value="Jacqueline.Dukes">Jacqueline Dukes</option>
+  <option value="Rich.Rousseau">Rich Rosseau</option>
+</select>
+  <input type="submit" class="btn btn-default"/>
+        </budget>
+            <a href="/approval" class="btn btn-default">Send email</a>
+    </div>
+    
+  </form>
+
+  <h2>Pending Requests</h2>
+<table id="trainTable"></table>
+
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>

@@ -7,7 +7,7 @@
           crossorigin="anonymous">
      <meta name="viewport" content="width=device-width, initial-scale=1"><script src="https://code.jquery.com/jquery-2.2.0.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/trainRequest.css">
-     <script src="../js/trainRequest.js"></script>
+     <script src="../js/outstandingRequest.js"></script>
     <title>Train2Go</title>
 </head>
 <body>
@@ -31,9 +31,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a class="button"href="landingpage.html">Home</a></li>
+        <li><a class="button"href="landingPage.html">Home</a></li>
         <li><a class="button"href="emp2.html">Request for Training</a></li>
-        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/outstandingRequest">Supervisor</a></li> 
+        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/trainRequest">History</a></li> 
         <li><a class="button"href="cus.html">Contact us</a></li> 
         
        
@@ -44,11 +44,13 @@
 </nav>
 
       
-
-      <h2>My Training Request History</h2>
-        <p> (Y= Approved;N=Not approved;P=pending;NA=approval not reuired;SU=supervisor;DH;department head;VP= vice president)</p>
+      <h2><input type="PastRequests" class="btn btn-past"/></h2>
+      <h2><input type="RejectedRequests" class="btn btn-default"/></h2>
+      <h2>Requests Waiting for Approval</h2>
+      <h2>Supervisor:Scott WISSEL</h2>
+        <p> (Y= Approved;N=Not approved;P=pending;SU=supervisor;DH;department head;VP= vice president)</p>
       </div>
-    <table id="trainRequestTable"></table>
+    <table id="outstandingRequestTable"></table>
     </div>
     
     

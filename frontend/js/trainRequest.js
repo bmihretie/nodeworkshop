@@ -1,7 +1,7 @@
 $(document).ready(function(){
     //getStub('/TTX_Empl_Trng_Reqst',function(results){
     $.get('getTTX_Empl_Trng_Reqst',function(results){
-    var tableString = "<tr><th>Edit Request</th><th>Course Name</th><th>Start Date </th><th>End Date</th><th>cost</th><th>SU </th><th>DH</th><th>VP</th><th>Course Completion Status</th></tr>";
+    var tableString = "<thead><tr><th>Edit Request</th><th>Course Name</th><th>Start Date </th><th>End Date</th><th>cost</th><th>SU </th><th>DH</th><th>VP</th><th>Course Completion Status</th></tr></thead>";
     console.log(results);
      $.each(results, function(index, rowObject){
      tableString+= "<tr><td>" + rowObject.trng_reqst_nbr + "</td>" +

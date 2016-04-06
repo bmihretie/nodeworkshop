@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../css/employee.css">
+<script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+<script src="../js/employee.js"></script>
+
+<title>Train2Go</title>
+</head>
+
+  <body>
+ 
+  <div class="container-fluid">
+    
+      <div class="header">
+        <p> <img src="http://www.ttx.com/Libraries/Main_Gallery/TTXLOGOr_4c_RSG.sflb.ashx" border-width="0" height="45">   
+           Railcar Pooling Experts&reg;</p>
+      </div>
+
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Train2Go</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a class="button"href="emp2.html">Request for Training</a></li>
+        <li><a class="button"href="#">Supervisor</a></li> 
+        <li><a class="button"href="emp5.html">History</a></li>
+        <li><a class="button"href="#">Course completion Form</a></li> 
+        <li><a class="button"href="#">Search</a></li>
+       
+         
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+       <h2>New Training Request Form</h2>
+    <p>Requestor:Scott C Wissel:</p>
+            	
+   
+		<!-- i deleted  <form role="form"> and changed div class to form class -->
+	
+	<form class="form-group "id="addTrainingForm">
+		 <label for="sel1"> Course Type<span>*</span>:</label>
+			<select class="form-control" id="trng_cors_typ">
+			<option value="Class Room">Class Room</option>
+			<option value="Conference">Conference</option>
+			<option value="Seminar">Seminar</option>
+			<option value="Web/Computer">Web/Computer</option>
+			</select>
+		
+			<br>
+          <div class="input">Course Name: <span>*(required will not be published)</span><br><input type="text" id="trng_cors_nm" name="trng_cors_nm" required maxlength="256"/></div><br></br>
+          <div class="input">Course ID: <span>*</span><br><input type="int" id="trng_reqst_nbr" maxlength="10"/></div> <br></br>
+          <div class="input">Start Date: <span>*</span><br><input type="date" id = "trng_cors_strt_dt"/></div><br></br>
+          <div class="input">End Date:<span>*</span><br><input type="date" id="trng_cors_end_dt"/></div><br></br>
+          <div class="input"></div>Total Hours<span>*</span><br><input type="number" min="1" value="0" id="trng_cors_totl_nbr_hrs" /></div><br></br>
+          <div class="input">Location: <span>*</span><br><input type="text" id="trng_cors_locn"/></div><br></br>
+          <div class="input">Cost($):<span>*</span><br><input type="number" min="1" value="0" id="trng_cors_cost" /></div><br></br>
+          <div class="input">Related Expense($):<span>*</span><br><input type="number" min="1" value="0" id="trng_cors_rltd_exp_amt"/></div><br></br>
+          <div class="input">Course Benefit: <span>*</span><br><input type="text" id="trng_reqst_cors_bnft_txt"/></div><br></br>
+          <p>Is the cost of the training included in this year plan?<span>*</span></p>
+          <input type="radio" name="plan" id="trng_cors_budg_pln_flg" value="Y" checked> Yes<br>
+          <input type="radio" name="plan" id="trng_cors_not_budg_pln_flg" value="N"> No<br>
+
+  <br>
+      
+      <p>Vendor Infromation:</p><br>
+      <div class="input">Vendor Name:<br><input type="text" id="vndr_nm"></div><br></br>
+      <div class="input">Adreess:<br><input type="text" id="vndr_mail_addr"/></div><br></br>
+      <div class="input">City:<br><input type="text" id="vndr_mail_city"/></div><br></br>
+      <div class="input">State:<br> <input type="text" id="vndr_mail_st"/></div><br></br>
+      <div class="input">Zip code:<br><input type="int"   id="vndr_mail_zip_cd"/></div><br></br>
+      <p> Education/Registeration Payment Information</p>
+      
+      <br>
+      <p> This page is to be used to pay for education(classes) or Registeration(seminars,conferences,conventions,or workshops) expenses only.</p>
+      <br><p1> Forward to Accounting:</p1><br>
+      <input type="radio" name="accounting" id="trng_reqst_fwd_actg_paym_flg" value="Y" checked> Yes<br>
+      <input type="radio" name="accounting" id="trng_reqst_fwd_actg_paym_flg" value="N"> No<br>
+	   
+		   <div>
+		     	  <div id="contact_submit"><button type="submit">Submit</button>
+        </div>
+		
+	 </form>
+	          
+        	   
+	   
+
+	
+	  <div id="footer">
+		
+    		<ul>
+        <li><a href="#">Contact us</a></li>
+        </ul> 
+    			&copy; 2016 TTX Training Application.
+    			 All results reserved
+    		</div>
+</div><!-- /.container-fluid -->
+
+
+
+
+
+</body>
+</html>

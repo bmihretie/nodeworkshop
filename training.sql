@@ -1,19 +1,14 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @bmihretie
- Watch 1
-  Star 0
-  Fork 1 icstars/geekweek-postgresql
- Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathgeekweek-postgresql/trainrequest.sql
-c06cbe2  21 days ago
-@icstars icstars script to create the database and users and a sample to run a query
-1 contributor
-RawBlameHistory     63 lines (58 sloc)  13.4 KB
+--sudo service postgresql start
+
+-- connect:
+-- sudo sudo -u postgres psql
+
+-- get to the filesystem while still logged in as super user
+-- \! 
+
+-- run this file
+-- psql -f trains.sql
+
 create database trainrequest;
 
 \c trainrequest;

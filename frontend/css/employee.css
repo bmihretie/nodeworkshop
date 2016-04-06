@@ -112,27 +112,23 @@ body {
 		font-size: 12px;
 	}
     
-    .header { border: 1px solid red;
-    padding: 10px;
+    .header { border: 2px solid red;
+    padding: 20px;
     text-decoration: none;
-    margin: 2px;
+    margin-top:-40px;
     background-color:#527F92;
     color:none;
-	text-align: center;
+	text-align: left;
 	line-height: normal;
 		}
-.cost{
-    float:left;
-}
-
 
 h2 {
     text-align:center;
-    background-color:gray;
-    color:red;
+    background-color:none;
+    color:gray;
 }
 
-	
+
      
 	.navbar .navbar-nav {
  display: inline-block;
@@ -196,11 +192,13 @@ h2 {
            }
     
     .form-group{
-        margin:50px;
+        
         display: table;
     }
  
- 
+ body{
+     margin:50px;
+ }
  
  
  

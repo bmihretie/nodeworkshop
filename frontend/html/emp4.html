@@ -57,29 +57,35 @@
           <p>Requestor:Scott C Wissel:</p>
           </div>
           
-      <div class="form-group">
-      <div>
-        <div class="cost">
-      <p>is the cost for training included in this year plan?<span>*</span></p>
-        </div>
+  <form>
+    <p>Is the cost of the training included in this year plan?<span>*</span></p>
+  <input type="radio" name="plan" id="trng_cors_budg_pln_flg" value="Y" checked> Yes<br>
+  <input type="radio" name="plan" id="trng_cors_not_budg_pln_rsn_txt" value=""> No<br>
+   
+
+  <br>
       
-      <div class="yes">
-      <label><input type="radio" name="optradio">yes</label>&nbsp;
-      <label><input type="radio" name="optradio">no</label>
-      </div>
-      </div> <br>
-      <p>Vendor Infromation:</p>
-      Name <span>*</span><input type="text" /><br></br>
-      Adreess <span>*</span><input type="text" /><br></br>
-      City <input type="text" /><br></br>
-      Zip code <input type="text" /><br></br>
-         
-      </div>
+      <p>Vendor Infromation:</p><br>
+     
+      <div class="input">Vendor Name:<br><input type="text" id="vndr_nm"/></div><br></br>
+      <div class="input">Adreess:<br><input type="text" id="vndr_mail_addr"/></div><br></br>
+      <div class="input">City:<br><input type="text" id="vndr_mail_city"/></div><br></br>
+      <div class="input">State:<br> <input type="text" id="vndr_mail_st"/></div><br></br>
+      <div class="input">Zip code:<br><input type="text" id="vndr_mail_zip_cd"/></div><br></br>
+      
+      <p> Education/Registeration Payment Information</p>
+      <p> This page is to be used to pay for education(classes) or Registeration(seminars,conferences,conventions,or workshops) expenses only.</p>
+      <p1> Forward to Accounting:</p1><br>
+      <input type="radio" name="accounting" id="trng_reqst_fwd_actg_paym_flg" value="Y" checked> Yes<br>
+      <input type="radio" name="accounting" id="trng_reqst_fwd_actg_paym_flg" value="Y"> No<br>
           </form>
+      
+       
       <ul class="pager">
         <li class="previous"><a href="emp3.html">Previous</a></li>
-        <li class="next"><a href="submit">Submit</a></li>
+        <li class="next"><a href="Submit">Submit</a></li>
       </ul>
+      
 		
         	<div id="footer">
         		<ul>
