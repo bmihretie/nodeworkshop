@@ -7,20 +7,51 @@
           crossorigin="anonymous">
      <meta name="viewport" content="width=device-width, initial-scale=1"><script src="https://code.jquery.com/jquery-2.2.0.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/trainRequest.css">
-     <script src="../js/trainRequest.js"></script>
+     <script src="../js/pastRequest.js"></script>
     <title>Train2Go</title>
+      <style>
+a:link {
+    color: green; 
+    background-color: transparent;
+    text-decoration: none;
+    
+    
+}
+p1 a {
+    font: Helvetica 25px;
+}
+a:visited {
+    color:blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.yes{
+    text-decoration:underline;
+    font-size:20px;
+}
+</style>
 </head>
 <body>
     
     
-   
+    <div class="container-fluid">
          <div class="header">
         <p> <img src="http://www.ttx.com/Libraries/Main_Gallery/TTXLOGOr_4c_RSG.sflb.ashx" border-width="0" height="45">   
-           <br>Railcar Pooling Experts&reg;</p>
+          <br> Railcar Pooling Experts&reg;</p>
       </div>
-      
-    
-<nav class="navbar navbar-inverse">
+
+  <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -45,23 +76,25 @@
   </div>
 </nav>
 
+      <div class="yes">
+      <p1><a href="https://nodeworkshop-bmihretie1.c9users.io/rejectedRequest">Rejected Requests</a></p1>
+      </div>
+      <h2>Lists of All Past Requests </h2>
+      
+        <p> (Y= Approved;N=Not approved;P=pending;SU=supervisor;
+        <br>DH;department head;VP= vice president)</p>
+     
+    <table id="pastRequestTable"></table>
  
-  <div>
-      <h2>ALAN TANG Training Request History</h2>
-        <p> (Y= Approved;N=Not approved;P=pending;NA=approval not reuired;SU=supervisor;<br>DH;department head;VP= vice president)</p>
-    </div>  
-    
-    <table id="trainRequestTable"></table>
-    
-  
-    
-     <div id="footer">
+ 
+  <div id="footer">
 		
     	
     			&copy; 2016 TTX Training Application.
     			 All results reserved
     		</div>
-    		</div>
+    
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>

@@ -17,52 +17,47 @@
 <title>Train2Go</title>
 <style>
  
- 
+ body {
+   padding:10px;
+ }
   .header { border: 2px solid red;
     padding: 20px;
     text-decoration: none;
-    margin-top:-15px;
+    margin-top:0px;
     background-color:#527F92;
     color:none;
 	text-align: left;
 	line-height: normal;
 		}
 		
-		h2{
+		h2 {
 		background-color:#9A9964}
+		span{color:red;}
+		#footer {
+    border: 1px solid red;
+    color: efe5d0;
+    text-align: center;
+    padding: 15px;
+     margin:10px;
+    height:80px;
+    	}
+    	.button{
+    	  color:black;
+    	}
+    	
 </style>
 
-<script>
-  
-  jQuery.validator.addClassRules({
-    
-     coursename: {
-    required: true,
-    minlength: 2
-  },
-  zip: {
-    required: true,
-    digits: true,
-    minlength: 5,
-    maxlength: 9
-  }
-});
 
-    
-    //field: {trng_cors_nm,trng_reqst_nbr,trng_cors_strt_dt,trng_cors_end_dt,trng_cors_totl_nbr_hrs,trng_cors_locn,trng_cors_cost,trng_cors_rltd_exp_amt,trng_reqst_cors_bnft_txt,trng_cors_budg_pln_flg,
-      required: true,
-      normalizer: function( value ) {
-        // Trim the value of the `field` element before
-        // validating. this trims only the value passed
-        // to the attached validators, not the value of
-        // the element itself.
-        //return $.trim( value );
-      //}
-    //}
-  //}
+
+ <script>
+
+        $("#button").click( function()
+           {
+             alert('button clicked');
+           }
+        );
   
-  
-//} );
+
 </script>
 </head>
 
@@ -72,11 +67,9 @@
     
      <div class="header">
         <p> <img src="http://www.ttx.com/Libraries/Main_Gallery/TTXLOGOr_4c_RSG.sflb.ashx" border-width="0" height="45">   
-           Railcar Pooling Experts&reg;</p>
+           <br>Railcar Pooling Experts&reg;</p>
       </div>
-
-	  
-  <nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -88,19 +81,18 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a class="button"href="landingPage.html">Home</a></li>
-        <li><a class="button"href="emp2.html">Request for Training</a></li>
+        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/landingPage">Home</a></li>
+        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/emp2">Request for Training</a></li>
         <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/outstandingRequest">Supervisor</a></li> 
         <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/trainRequest">History</a></li>
-        <li><a class="button"href="cus.html">Contact us</a></li> 
-       
+        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/cus">Contact us</a></li> 
+        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/searchPage">Search</a></li> 
        
          
       </ul>
     </div>
   </div>
 </nav>
-
 
 
 
@@ -173,30 +165,7 @@
 <!-- Third row --> 
 
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      
-    <br>
-    <div class="input">Start Date: <span>*</span><br><input type="date" id = "trng_cors_strt_dt"/></div><br></br>
-      
-    </div>
-    <div class="col-sm-4">
-      
-       <br>
-    <div class="input">End Date:<span>*</span><br><input type="date" id="trng_cors_end_dt"/></div><br></br>
-      
-    </div>
-    <div class="col-sm-4">
-      
-       <br>
-      <div class="input"></div>Total Hours<span>*</span><br><input type="number" min="1" value="0" id="trng_cors_totl_nbr_hrs" /></div><br></br>
-      
-    </div>
-  </div>
-</div>
 
-<!-- 4th Row-->
 
 
 <div class="container">
@@ -210,13 +179,13 @@
     <div class="col-sm-4">
       
       <br>
-      <div class="input">Cost($):<span>*</span><br><input type="number" min="1" value="0" id="trng_cors_cost" /></div><br></br>
+      <div class="input">Cost($):<span>*</span><br><input type="decimal" min="1" value="0" id="trng_cors_cost" /></div><br></br>
       
     </div>
     <div class="col-sm-4">
       
       <br>
-      <div class="input">Related Expense($):<span>*</span><br><input type="number" min="1" value="0" id="trng_cors_rltd_exp_amt"/></div><br></br>
+      <div class="input">Related Expense($):<span>*</span><br><input type="decimal" min="1" value="0" id="trng_cors_rltd_exp_amt"/></div><br></br>
       
     </div>
   </div>
@@ -336,15 +305,21 @@
     </div>
 	</div>
     <br>
-    <div>
-<input type="submit" value="submit" id="contact_submit"="validate!"></br>
-</div>
-      
-    </div>
+    
+
+
+<button type="button" onclick="alert('Congratulations.You have succeesfully submitted your request for training.You will recieve confirmation email subsequently!')">Submit</button>
+ 
+    
 	</div>
-	</form>
-	
-</div><!-- /.container-fluid -->
+	</form> <br>
+	<div id="footer">
+		
+    	
+    			&copy; 2016 TTX Training Application.
+    			 All results reserved
+    		</div>
+	 </div><!-- /.container-fluid -->
 
 
 

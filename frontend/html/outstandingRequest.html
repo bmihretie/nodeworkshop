@@ -9,6 +9,38 @@
     <link rel="stylesheet" type="text/css" href="../css/trainRequest.css">
      <script src="../js/outstandingRequest.js"></script>
     <title>Train2Go</title>
+    <style>
+a:link {
+    color: green; 
+    background-color: transparent;
+    text-decoration: none;
+    
+    
+}
+p1 a {
+    font: Helvetica 25px;
+}
+a:visited {
+    color:blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.yes{
+    text-decoration:underline;
+    font-size:20px;
+}
+</style>
 </head>
 <body>
     
@@ -16,7 +48,7 @@
     <div class="container-fluid">
          <div class="header">
         <p> <img src="http://www.ttx.com/Libraries/Main_Gallery/TTXLOGOr_4c_RSG.sflb.ashx" border-width="0" height="45">   
-           Railcar Pooling Experts&reg;</p>
+           <br>Railcar Pooling Experts&reg;</p>
       </div>
 
   <nav class="navbar navbar-inverse">
@@ -31,29 +63,41 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a class="button"href="landingPage.html">Home</a></li>
-        <li><a class="button"href="emp2.html">Request for Training</a></li>
-        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/trainRequest">History</a></li> 
-        <li><a class="button"href="cus.html">Contact us</a></li> 
-        
+        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/landingPage">Home</a></li>
+        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/emp2">Request for Training</a></li>
+        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/outstandingRequest">Supervisor</a></li> 
+        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/trainRequest">History</a></li>
+        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/cus">Contact us</a></li> 
+        <li><a class="button"href="https://nodeworkshop-bmihretie1.c9users.io/searchPage">Search</a></li> 
        
          
       </ul>
     </div>
   </div>
 </nav>
-
       
-      <h2><input type="PastRequests" class="btn btn-past"/></h2>
-      <h2><input type="RejectedRequests" class="btn btn-default"/></h2>
+   <div class="yes">   
+<p1><a href="https://nodeworkshop-bmihretie1.c9users.io/pastRequest">Past Requests</a></p1> <br>
+<p1><a href="https://nodeworkshop-bmihretie1.c9users.io/rejectedRequest">Rejected Requests</a></p1><br>
+<p1><a href="next">Budget</a></p1>
+   </div>  
+  <div class="container-fluid">
       <h2>Requests Waiting for Approval</h2>
       <h2>Supervisor:Scott WISSEL</h2>
-        <p> (Y= Approved;N=Not approved;P=pending;SU=supervisor;DH;department head;VP= vice president)</p>
+        <p> (Y= Approved;N=Not approved;P=pending;SU=supervisor;<br>
+        DH;department head;VP= vice president)</p>
       </div>
+      <div>
     <table id="outstandingRequestTable"></table>
     </div>
     
-    
+     <div id="footer">
+		
+    	
+    			&copy; 2016 TTX Training Application.
+    			 All results reserved
+    		</div>
+    		</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>

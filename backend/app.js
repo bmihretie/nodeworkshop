@@ -48,6 +48,11 @@ app.get('/emp2', function(req,res){
   return res.render("emp2.html");
 });
 
+app.get('/searchPage', function(req,res){
+  console.log('app searchPage/ requested');
+  return res.render("searchPage.html");
+});
+
 
 //post and get for employee request from
 
@@ -132,6 +137,53 @@ app.get('/getTTX_Empl_Trng_Reqst', function(req,res){
       res.send(results);
          });
 });
+
+//rejected  pages 
+app.get('/rejectedRequest', function(req,res){
+  console.log('app / rejectedRequest requested');
+  return res.render('rejectedRequest.html');
+});
+
+app.get('/getRejected', function(req,res){
+  console.log('app getRejected/ requested');
+  database.executeQuery("SELECT trng_reqst_nbr,trng_cors_nm,trng_cors_strt_dt,trng_cors_end_dt,trng_cors_cost,trng_reqst_immed_supv_apvl_flg,trng_reqst_dept_hd_apvl_flg,trng_reqst_vp_apvl_flg,trng_cors_compl_flg FROM TTX_Empl_Trng_Reqst where trng_reqst_dept_vp_apvl_flg = 'P'", function(results) {
+      res.send(results);
+         });
+});
+
+
+// train list retriving data from json and database
+app.get('/getTrains', function(req,res){
+  console.log('app getTrains/ requested');
+   database.executeQuery("SELECT * FROM trains", function(results) {
+      res.send(results);
+         });
+  });
+
+
+
+
+//past requests
+app.get('/pastRequest', function(req,res){
+  console.log('app / pastRequest requested');
+  return res.render('pastRequest.html');
+});
+
+app.get('/getPast', function(req,res){
+  console.log('app getPast/ requested');
+  database.executeQuery("SELECT trng_reqst_nbr,trng_cors_nm,trng_cors_strt_dt,trng_cors_end_dt,trng_cors_cost,trng_reqst_immed_supv_apvl_flg,trng_reqst_dept_hd_apvl_flg,trng_reqst_vp_apvl_flg,trng_cors_compl_flg FROM TTX_Empl_Trng_Reqst", function(results) {
+      res.send(results);
+             });
+});
+
+// train list retriving data from json and database
+app.get('/getTrains', function(req,res){
+  console.log('app getTrains/ requested');
+   database.executeQuery("SELECT * FROM trains", function(results) {
+      res.send(results);
+         });
+  });
+
 
 
 //outstanding pages for Scottt
